@@ -1,0 +1,152 @@
+- [UVM 1.2 Standard Components](knowledge_uvm_11_standard_components.md) — driver/monitor/agent/env/test/subscriber/scoreboard/comparator 学习记忆
+- [UVM 1.2 TLM1](knowledge_uvm_8_tlm1.md) — TLM1 ports/exports/imps、analysis port、FIFO、req/rsp channel 学习记忆
+- [UVM 1.2 TLM2](knowledge_uvm_9_tlm2.md) — TLM2 transport interface、sockets、generic payload、time 与 extensions 学习记忆
+- [UVM 1.2 Sequences/Sequencer](knowledge_uvm_10_sequences_sequencer.md) — sequence_item、start/finish item、sequencer arbitration、driver pull interface 与 default sequence 学习记忆
+- [AXIACE5 知识库索引](knowledge_index_axiace5.md) — AXI/ACE5 文档学习进度与章节索引
+- [D4/D5 ACE 写事务与 Snoop 要求](knowledge_d4_d5_ace_write_snoop_requirements.md) — Clean/Make/Write/Evict、重叠写和 snoop 规则
+- [避免 memory agent 使用 worktree](avoid-worktree-for-memory-agents.md) — 读取本地 memory 时避免 `/.claude` 路径错误
+- [AMBA APB 知识库索引](knowledge_apb_index.md) — APB v2.0 文档学习进度、章节索引与后续学习入口
+- [UVM 1.2 源码知识库索引](knowledge_uvm_index.md) — UVM 1.2 源码深度学习进度、源码架构与主题入口
+- [UVM 1.2 Policy Classes](knowledge_uvm_4_policy_classes.md) — UVM printer/comparer/packer/recorder 学习记忆
+- [UVM 1.2 Component/Phasing](knowledge_uvm_5_component_phasing.md) — UVM component tree、root、phase/domain、objection 学习记忆
+- [UVM 1.2 Reporting](knowledge_uvm_6_reporting.md) — UVM report macros/object/handler/server/message/catcher 与退出链路学习记忆
+- [UVM 1.2 Register Model](knowledge_uvm_12_register_model.md) — reg/block/field/map/adapter/predictor/sequence/backdoor/mem/vreg 深入学习记忆
+- [UVM 1.2 Register Model 深入阶段](knowledge_uvm_12_register_model.md) — 访问语义、predictor 拼装与内建序列行为
+- [UVM 1.2 DPI](knowledge_uvm_13_dpi.md) — DPI 层、命令行参数、regex/glob、HDL backdoor 与 vendor backend 学习记忆
+- [UVM 1.2 Examples](knowledge_uvm_14_examples.md) — hello_world、factory、objections、integrated APB 如何串联源码机制
+- [UVM 1.2 Codec Integrated Example](knowledge_uvm_15_codec_example.md) — integrated/codec 端到端 reg model、APB/VIP agent、scoreboard、phase jump 与 ISR 流程
+- [UVM 1.2 Callbacks/Recording/Cmdline](knowledge_uvm_16_callbacks_recording_cmdline.md) — callbacks、transaction recording/database/stream/recorder 与命令行 plusargs 处理路径
+- [UVM 1.2 Final Infrastructure](knowledge_uvm_17_final_infrastructure.md) — event/barrier/pool/queue/DAP/links/traversal/misc/global helpers 最后一轮源码查漏
+- [计算机体系结构：量化研究方法（第5版）索引](knowledge-index-computer-architecture-quantitative-approach.md) — 当前 PDF 的学习进度、已失效旧映射说明、双页码规则及精确断点
+- [第1章：计算机类别](knowledge-chapter-1-classes-of-computers.md) — §1.2 的服务器、Cluster/WSC、嵌入式系统、并行性与 Flynn 分类
+- [第1章：定义计算机体系结构](knowledge-chapter-1-defining-computer-architecture.md) — §1.3 的 ISA、微体系结构、硬件三层定义及设计权衡
+- [第1章：带宽与延迟趋势](knowledge-chapter-1-bandwidth-latency.md) — §1.4 的带宽/延迟历史趋势、图 1.9/1.10 与跨技术比较
+- [第1章：功率与能量](knowledge-chapter-1-power-energy.md) — §1.5 的 TDP、任务能量、动态/静态功耗公式与节能策略
+- [第1章：成本趋势](knowledge-chapter-1-cost-trends.md) — §1.6 的学习曲线、商品化、晶圆/裸片成本公式、yield 模型、裸片面积与良品率示例（已读至 PDF p.60 / 书内 p.32）
+- [第1章：性能度量与基准测试](knowledge-chapter-1-performance-measurement-benchmarks.md) — §1.8 的 TPC 事务处理基准、性能报告可复现性、SPECratio、Figure 1.17 与几何平均（已读至 PDF p.72 / 书内 p.44；§1.9 已转入独立主题记忆）
+- [第1章：定量化计算机设计原则](knowledge-chapter-1-quantitative-design-principles.md) — §1.9 的并行性、局部性、关注常见情况、Amdahl 定律与 Processor Performance Equation（已覆盖至 PDF p.79 / 书内 p.51）
+- [第1章：综合案例、谬误与结论](knowledge-chapter-1-integration-fallacies-conclusion.md) — §1.10–§1.12 的 SPECpower 性能/价格/功耗案例、Amdahl/基准/MTTF/峰值性能谬误及第1章结论（正文完成至 PDF p.88 / 书内 p.60）
+- [第2章：存储层次结构设计导论](knowledge-chapter-2-introduction.md) — §2.1 的层次结构目标、处理器-DRAM 差距、cache 基础、3C miss、AMAT 与六项基础优化（PDF p.100–106 / 书内 p.72–78）
+- [第2章：降低 Cache Hit Time 的高级优化](knowledge-chapter-2-cache-hit-time-optimizations.md) — §2.2 优化 1–2：小型简单 L1、关联度/能量权衡、way prediction 与 way selection（PDF p.107–110 / 书内 p.79–82）
+- [第2章：提高 Cache Bandwidth 的高级优化](knowledge-chapter-2-cache-bandwidth-optimizations.md) — §2.2 优化 3–5：cache 流水化、nonblocking cache、在途 miss 与 multibanked cache（PDF p.110–114 / 书内 p.82–86）
+- [第2章：降低 Cache Miss Penalty 的高级优化](knowledge-chapter-2-cache-miss-penalty-optimizations.md) — §2.2 优化 6–7：critical word first、early restart 与 write-buffer merging（PDF p.114–115 / 书内 p.86–87）
+- [第2章：编译器驱动的 Cache Miss 优化](knowledge-chapter-2-compiler-cache-optimizations.md) — §2.2 优化 8：loop interchange 与 blocking/tiling 的空间和时间局部性优化（PDF p.116–118 / 书内 p.88–90）
+- [第2章：硬件与编译器 Cache Prefetch](knowledge-chapter-2-prefetch-optimizations.md) — §2.2 优化 9–10：stream buffer、nonfaulting prefetch、提前量/带宽/功耗权衡及十项优化总结（PDF p.119–124 / 书内 p.91–96）
+- [第2章：Memory Technology and Optimizations](knowledge-chapter-2-memory-technology-optimizations.md) — §2.3 的 DRAM 组织与刷新、SDRAM/DDR/GDDR、Flash、parity/ECC/Chipkill（已读至 PDF p.132 / 书内 p.104；后续已进入 §2.4）
+- [第2章：Protection、Virtual Memory and Virtual Machines](knowledge-chapter-2-protection-virtual-memory-vms.md) — §2.4–§2.5 的分页保护、TLB、VMM、shadow page table、Xen 与缓存一致性导论（已读至 PDF p.140 / 书内 p.112；后续已进入 §2.6）
+- [第2章：Cortex-A8 与 Core i7 内存层次](knowledge-chapter-2-cortex-a8-core-i7-memory-hierarchies.md) — §2.6 的 VIPT、TLB/cache 参数、逐级 miss 路径、主存代价及 miss-rate 统计口径（PDF p.141–152 / 书内 p.113–124；后续已完成）
+- [第2章：Fallacies and Pitfalls](knowledge-chapter-2-fallacies-pitfalls.md) — §2.7 的跨程序外推、短 trace/phase/input 偏差、带宽陷阱与不可虚拟化 ISA（PDF p.153–156 / 书内 p.125–128）
+- [第2章：结论与内存技术展望](knowledge-chapter-2-conclusion-memory-futures.md) — §2.8–§2.9 的 DRAM 放缓、Flash/MRAM/相变存储、memory wall、延迟隐藏与 scratchpad 权衡；第2章正文完成至 PDF p.159 / 书内 p.131
+- [第2章案例1周期一：Blocking](knowledge-chapter-2-case-study-1-blocking.md) — 矩阵转置的 tile working set、miss 分类与关联度分析（PDF p.159–160 / 书内 p.131–132）
+- [第2章案例1周期二：Prefetching](knowledge-chapter-2-case-study-1-prefetching.md) — stride prefetch、提前量、outstanding requests 与 pollution 权衡（PDF p.161 / 书内 p.133）
+- [第2章案例2周期三：Memory-System Probing](knowledge-chapter-2-case-study-2-memory-probing.md) — 用 array size/stride 曲线推断 cache、TLB、主存与并行带宽（PDF p.161–164 / 书内 p.133–136）
+- [第2章习题周期四：Cache Organization](knowledge-chapter-2-exercises-cache-organization.md) — CACTI、way prediction、banking/pipelining、nonblocking、critical word 与 write buffer 解题框架（PDF p.164–166 / 书内 p.136–138）
+- [第2章习题周期五：Memory and Virtualization](knowledge-chapter-2-exercises-memory-virtualization.md) — DDR timing/bandwidth/power、Flash break-even、可靠性和虚拟化开销框架（PDF p.167–169 / 书内 p.139–141）
+- [第2章习题周期六：System Evaluation](knowledge-chapter-2-exercises-system-evaluation.md) — 嵌套虚拟化、IOMMU、OOO 延迟隐藏和 VTune 层次测量；第2章通读至 PDF p.172 / 书内 p.144
+- [第3章周期一：ILP 与依赖](knowledge-chapter-3-ilp-cycle-1-dependences.md) — ILP、静态/动态路线、data/name dependence、寄存器重命名（PDF p.176–180 / 书内 p.148–152）
+- [第3章周期二：Hazards 与控制依赖](knowledge-chapter-3-ilp-cycle-2-hazards.md) — RAW/WAW/WAR、RAR、control dependence、exception behavior 与 data flow（PDF p.181–183 / 书内 p.153–155）
+- [第3章周期三：Speculation 与编译器入口](knowledge-chapter-3-ilp-cycle-3-speculation-entry.md) — software speculation、liveness、控制停顿与 §3.2 入口（PDF p.184–185 / 书内 p.156–157）
+- [第3章周期四：基础流水线调度](knowledge-chapter-3-cycle-04-basic-pipeline-scheduling.md) — 静态调度、latency 隐藏与语义约束（PDF p.186–187 / 书内 p.158–159）
+- [第3章周期五：循环展开与调度](knowledge-chapter-3-cycle-05-loop-unrolling-scheduling.md) — loop unrolling、重命名、跨迭代调度与限制（PDF p.188–190 / 书内 p.160–162）
+- [第3章周期六：相关分支预测](knowledge-chapter-3-cycle-06-correlating-branch-prediction.md) — 全局历史与两级 `(m,n)` predictor（PDF p.190–192 / 书内 p.162–164）
+- [第3章周期七：Tournament Predictor](knowledge-chapter-3-cycle-07-tournament-branch-predictors.md) — 局部/全局组合、选择器与 Core i7 高层结构（PDF p.193–195 / 书内 p.165–167）
+- [第3章周期八：Scoreboarding](knowledge-chapter-3-cycle-08-scoreboarding-dynamic-scheduling.md) — 动态调度、四阶段 hazard 控制与非精确异常（PDF p.195–198 / 书内 p.167–170）
+- [第3章周期九：Tomasulo 组织](knowledge-chapter-3-cycle-09-tomasulo-organization.md) — reservation station、标签、CDB 与动态重命名（PDF p.198–203 / 书内 p.170–175）
+- [第3章周期十：Tomasulo 状态示例](knowledge-chapter-3-cycle-10-tomasulo-state-examples.md) — 状态字段、分布式 hazard 检测与 WAR/WAW 消除（PDF p.204–207 / 书内 p.176–179）
+- [第3章周期十一：Tomasulo 循环算法](knowledge-chapter-3-cycle-11-tomasulo-loop-algorithm.md) — 动态循环展开、状态转换与基础限制（PDF p.207–211 / 书内 p.179–183）
+- [第3章周期十二：ROB 推测基础](knowledge-chapter-3-cycle-12-rob-speculation-basics.md) — ROB、按序提交与精确状态（PDF p.211–216 / 书内 p.183–188）
+- [第3章周期十三：恢复与内存次序](knowledge-chapter-3-cycle-13-speculation-recovery-memory-order.md) — misprediction、precise exception、store commit 与 forwarding（PDF p.217–220 / 书内 p.189–192）
+- [第3章周期十四：VLIW 静态多发射](knowledge-chapter-3-cycle-14-vliw-static-multiple-issue.md) — 静态多发射、VLIW、软件流水与兼容性（PDF p.220–224 / 书内 p.192–196）
+- [第3章周期十五：动态多发射](knowledge-chapter-3-cycle-15-dynamic-multiple-issue.md) — 双发射、同周期依赖、资源分配与 speculation（PDF p.225–230 / 书内 p.197–202）
+- [第3章周期十六：BTB 与返回预测](knowledge-chapter-3-cycle-16-branch-target-return-prediction.md) — BTB、间接跳转与 return address stack（PDF p.230–234 / 书内 p.202–206）
+- [第3章周期十七：集成取指与物理重命名](knowledge-chapter-3-cycle-17-integrated-fetch-register-renaming.md) — integrated fetch、physical registers 与 address alias prediction（PDF p.235–241 / 书内 p.207–213）
+- [第3章周期十八：ILP 上限](knowledge-chapter-3-cycle-18-ilp-limitations.md) — perfect processor、现实约束与复杂度/功耗限制（PDF p.241–249 / 书内 p.213–221）
+- [第3章周期十九：软硬件推测权衡](knowledge-chapter-3-cycle-19-hardware-software-speculation.md) — memory disambiguation、precise exception 与 nonblocking cache（PDF p.249–251 / 书内 p.221–223）
+- [第1章：可靠性与可用性](knowledge-chapter-1-dependability.md) — §1.7 的 dependability、reliability、availability、FIT、MTTF/MTTR/MTBF、SLA 服务状态、串联系统失效率与冗余电源示例（§1.7 已完成至 PDF p.63 / 书内 p.35）
+
+## 计算机体系结构自动学习批次（2026-08-19，边界复核版）
+
+- knowledge-chapter-3-cycle-20-multithreading-models: 周期1/30；多线程模型与SMT原理；§3.12；PDF p.252–p.254 OCR行36 / 书内 p.224–226；OCR 8224字符；下一断点 PDF p.254 / 书内 p.226，OCR第37行“Fine-Grained多线程效果”主题锚点。
+- knowledge-chapter-3-cycle-21-smt-resource-sharing: 周期2/30；Fine-Grained多线程效果；§3.12；PDF p.254 OCR行37–p.258 OCR行2 / 书内 p.226–230；OCR 7394字符；下一断点 PDF p.258 / 书内 p.230，OCR第3行“SMT效果与资源共享”主题锚点。
+- knowledge-chapter-3-cycle-22-smt-effectiveness: 周期3/30；SMT效果与资源共享；§3.12；PDF p.258 OCR行3–p.261 OCR行2 / 书内 p.230–233；OCR 8162字符；下一断点 PDF p.261 / 书内 p.233，OCR第3行“Cortex-A8流水线案例”主题锚点。
+- knowledge-chapter-3-cycle-23-cortex-a8-pipeline: 周期4/30；Cortex-A8流水线案例；§3.13；PDF p.261 OCR行3–p.264 OCR行29 / 书内 p.233–236；OCR 7341字符；下一断点 PDF p.264 / 书内 p.236，OCR第30行“Intel Core i7流水线案例”主题锚点。
+- knowledge-chapter-3-cycle-24-core-i7-pipeline: 周期5/30；Intel Core i7流水线案例；§3.13；PDF p.264 OCR行30–p.269 OCR行2 / 书内 p.236–241；OCR 9145字符；下一断点 PDF p.269 / 书内 p.241，OCR第3行“ILP谬误与陷阱”主题锚点。
+- knowledge-chapter-3-cycle-25-fallacies-and-pitfalls: 周期6/30；ILP谬误与陷阱；§3.14；PDF p.269 OCR行3–p.273 OCR行30 / 书内 p.241–245；OCR 11859字符；下一断点 PDF p.273 / 书内 p.245，OCR第31行“第3章结论”主题锚点。
+- knowledge-chapter-3-cycle-26-concluding-remarks: 周期7/30；第3章结论；§3.15；PDF p.273 OCR行31–p.275 OCR行43 / 书内 p.245–247；OCR 5674字符；下一断点 PDF p.275 / 书内 p.247，OCR第44行“历史资料、案例与习题”主题锚点。
+- knowledge-chapter-3-cycle-27-exercises-smt-and-design: 周期8/30；历史资料、案例与习题；§3.16与Case Study/Exercises；PDF p.275 OCR行44–p.287 OCR行71 / 书内 p.247–259；OCR 27298字符；下一断点 PDF p.288 / 书内 p.260，DLP第4章导论标题。
+- knowledge-chapter-3-completion-summary: 第3章四要素完成摘要；完成边界 PDF p.287 / 书内 p.259。
+- knowledge-chapter-4-cycle-01-introduction: 周期9/30；DLP第4章导论；第4章标题与§4.1；PDF p.288–p.292 OCR行4 / 书内 p.260–264；OCR 6158字符；下一断点 PDF p.292 / 书内 p.264，OCR第5行“向量体系结构基础”主题锚点。
+- knowledge-chapter-4-cycle-02-vector-architecture-basics: 周期10/30；向量体系结构基础；§4.2；PDF p.292 OCR行5–p.296 OCR行60 / 书内 p.264–268；OCR 12931字符；下一断点 PDF p.296 / 书内 p.268，OCR第61行“向量执行时间与convoy”主题锚点。
+- knowledge-chapter-4-cycle-03-vector-execution-convoys: 周期11/30；向量执行时间与convoy；§4.2；PDF p.296 OCR行61–p.302 OCR行4 / 书内 p.268–274；OCR 13087字符；下一断点 PDF p.302 / 书内 p.274，OCR第5行“向量长度与strip mining”主题锚点。
+- knowledge-chapter-4-cycle-04-vector-length-and-mask: 周期12/30；向量长度与strip mining；§4.2；PDF p.302 OCR行5–p.303 OCR行24 / 书内 p.274–275；OCR 3481字符；下一断点 PDF p.303 / 书内 p.275，OCR第25行“向量掩码”主题锚点。
+- knowledge-chapter-4-cycle-05-vector-mask-registers: 周期13/30；向量掩码；§4.2；PDF p.303 OCR行25–p.304 OCR行40 / 书内 p.275–276；OCR 3664字符；下一断点 PDF p.304 / 书内 p.276，OCR第41行“向量存储体带宽”主题锚点。
+- knowledge-chapter-4-cycle-06-memory-banks: 周期14/30；向量存储体带宽；§4.2；PDF p.304 OCR行41–p.306 OCR行2 / 书内 p.276–278；OCR 3530字符；下一断点 PDF p.306 / 书内 p.278，OCR第3行“Stride、gather-scatter与向量性能”主题锚点。
+- knowledge-chapter-4-cycle-07-stride-gather-scatter-performance: 周期15/30；Stride、gather-scatter与向量性能；§4.2；PDF p.306 OCR行3–p.310 OCR行10 / 书内 p.278–282；OCR 10871字符；下一断点 PDF p.310 / 书内 p.282，OCR第11行“多媒体SIMD扩展”主题锚点。
+- knowledge-chapter-4-cycle-08-simd-programming-limits: 周期16/30；多媒体SIMD扩展；§4.3；PDF p.310 OCR行11–p.316 OCR行11 / 书内 p.282–288；OCR 17091字符；下一断点 PDF p.316 / 书内 p.288，OCR第12行“GPU编程模型”主题锚点。
+- knowledge-chapter-4-cycle-09-gpu-programming-model: 周期17/30；GPU编程模型；§4.4；PDF p.316 OCR行12–p.319 OCR行8 / 书内 p.288–291；OCR 8008字符；下一断点 PDF p.319 / 书内 p.291，OCR第9行“GPU计算结构与线程调度”主题锚点。
+- knowledge-chapter-4-cycle-10-gpu-computational-structures: 周期18/30；GPU计算结构与线程调度；§4.4；PDF p.319 OCR行9–p.326 OCR行4 / 书内 p.291–298；OCR 17574字符；下一断点 PDF p.326 / 书内 p.298，OCR第5行“PTX虚拟ISA”主题锚点。
+- knowledge-chapter-4-cycle-11-ptx-isa: 周期19/30；PTX虚拟ISA；§4.4；PDF p.326 OCR行5–p.328 OCR行40 / 书内 p.298–300；OCR 7200字符；下一断点 PDF p.328 / 书内 p.300，OCR第41行“GPU条件分支”主题锚点。
+- knowledge-chapter-4-cycle-12-branch-divergence: 周期20/30；GPU条件分支；§4.4；PDF p.328 OCR行41–p.332 OCR行2 / 书内 p.300–304；OCR 10561字符；下一断点 PDF p.332 / 书内 p.304，OCR第3行“GPU存储结构与Fermi改进”主题锚点。
+- knowledge-chapter-4-cycle-13-gpu-memory-fermi: 周期21/30；GPU存储结构与Fermi改进；§4.4；PDF p.332 OCR行3–p.336 OCR行9 / 书内 p.304–308；OCR 8523字符；下一断点 PDF p.336 / 书内 p.308，OCR第10行“向量体系结构与GPU对比”主题锚点。
+- knowledge-chapter-4-cycle-14-vector-gpu-comparison: 周期22/30；向量体系结构与GPU对比；§4.4；PDF p.336 OCR行10–p.340 OCR行8 / 书内 p.308–312；OCR 11285字符；下一断点 PDF p.340 / 书内 p.312，OCR第9行“多媒体SIMD与GPU对比”主题锚点。
+- knowledge-chapter-4-cycle-15-gpu-vector-comparison: 周期23/30；多媒体SIMD与GPU对比；§4.4；PDF p.340 OCR行9–p.343 OCR行27 / 书内 p.312–315；OCR 9828字符；下一断点 PDF p.343 / 书内 p.315，OCR第28行“循环级并行与依赖基础”主题锚点。
+- knowledge-chapter-4-cycle-16-loop-dependence-basics: 周期24/30；循环级并行与依赖基础；§4.5；PDF p.343 OCR行28–p.346 OCR行40 / 书内 p.315–318；OCR 8458字符；下一断点 PDF p.346 / 书内 p.318，OCR第41行“仿射依赖测试与重命名”主题锚点。
+- knowledge-chapter-4-cycle-17-loop-dependence-analysis: 周期25/30；仿射依赖测试与重命名；§4.5；PDF p.346 OCR行41–p.349 OCR行8 / 书内 p.318–321；OCR 6312字符；下一断点 PDF p.349 / 书内 p.321，OCR第9行“消除依赖计算与归约”主题锚点。
+- knowledge-chapter-4-cycle-18-dependence-tests-and-reductions: 周期26/30；消除依赖计算与归约；§4.5；PDF p.349 OCR行9–p.350 OCR行14 / 书内 p.321–322；OCR 2820字符；下一断点 PDF p.350 / 书内 p.322，OCR第15行“DLP能耗与存储交叉问题”主题锚点。
+- knowledge-chapter-4-cycle-19-crosscutting-energy-memory: 周期27/30；DLP能耗与存储交叉问题；§4.6；PDF p.350 OCR行15–p.351 OCR行32 / 书内 p.322–323；OCR 3908字符；下一断点 PDF p.351 / 书内 p.323，OCR第33行“移动/服务器GPU与CPU比较”主题锚点。
+- knowledge-chapter-4-cycle-20-mobile-server-gpus: 周期28/30；移动/服务器GPU与CPU比较；§4.7；PDF p.351 OCR行33–p.359 OCR行6 / 书内 p.323–331；OCR 19946字符；下一断点 PDF p.359 / 书内 p.331，OCR第7行“DLP谬误与陷阱”主题锚点。
+- knowledge-chapter-4-cycle-21-tesla-core-i7-comparison: 周期29/30；DLP谬误与陷阱；§4.8；PDF p.359 OCR行7–p.360 OCR行42 / 书内 p.331–332；OCR 4593字符；下一断点 PDF p.360 / 书内 p.332，OCR第43行“第4章结论”主题锚点。
+- knowledge-chapter-4-cycle-22-fallacies-and-conclusions: 周期30/30；第4章结论；§4.9；PDF p.360 OCR行43–p.361 OCR行54 / 书内 p.332–333；OCR 4205字符；下一断点 PDF p.362 / 书内 p.334，§4.10 Historical Perspective and References标题。
+
+## 计算机体系结构自动学习批次（2026-08-19，第二批30周期，PDF p.362–457）
+
+- knowledge-chapter-4-cycle-23-historical-perspective-references: 周期1/30；§4.10，历史脉络与参考文献；PDF p.362 / 书内 p.334，OCR第3行 至 PDF p.362 / 书内 p.334，OCR第14行（含）；OCR 339字符；下一断点 PDF p.362 / 书内 p.334，OCR第15行，Case Study: Implementing a Vector Kernel on a Vector Processor and GPU标题。
+- knowledge-chapter-4-cycle-24-vector-kernel-case-study: 周期2/30；第4章 Case Study，向量内核在向量处理器与GPU上的实现案例；PDF p.362 / 书内 p.334，OCR第15行 至 PDF p.365 / 书内 p.337，OCR第8行（含）；OCR 5384字符；下一断点 PDF p.365 / 书内 p.337，OCR第9行，Exercises标题。
+- knowledge-chapter-4-cycle-25-vector-gpu-exercises: 周期3/30；第4章 Exercises，第4章向量与GPU练习；PDF p.365 / 书内 p.337，OCR第9行 至 PDF p.369 / 书内 p.341，OCR第62行（含）；OCR 11988字符；下一断点 PDF p.370 / 书内 p.342，OCR第1行，第5章目录页起点。
+- knowledge-chapter-5-cycle-01-chapter-roadmap: 周期4/30；第5章目录与题引，第5章目录与路线图；PDF p.370 / 书内 p.342，OCR第1行 至 PDF p.372 / 书内 p.344，OCR第6行（含）；OCR 1318字符；下一断点 PDF p.372 / 书内 p.344，OCR第7行，§5.1 Introduction标题。
+- knowledge-chapter-5-cycle-02-introduction-architectures: 周期5/30；§5.1，线程级并行导论与多处理器组织；PDF p.372 / 书内 p.344，OCR第7行 至 PDF p.379 / 书内 p.351，OCR第26行（含）；OCR 19852字符；下一断点 PDF p.379 / 书内 p.351，OCR第27行，§5.2 Centralized Shared-Memory Architectures标题。
+- knowledge-chapter-5-cycle-03-centralized-shared-memory: 周期6/30；§5.2，集中式共享存储体系结构；PDF p.379 / 书内 p.351，OCR第27行 至 PDF p.383 / 书内 p.355，OCR第11行（含）；OCR 11370字符；下一断点 PDF p.383 / 书内 p.355，OCR第12行，Snooping Coherence Protocols标题。
+- knowledge-chapter-5-cycle-04-snooping-coherence-protocols: 周期7/30；§5.2，监听式一致性协议；PDF p.383 / 书内 p.355，OCR第12行 至 PDF p.384 / 书内 p.356，OCR第19行（含）；OCR 3722字符；下一断点 PDF p.384 / 书内 p.356，OCR第20行，Basic Implementation Techniques标题。
+- knowledge-chapter-5-cycle-05-basic-snooping-implementation: 周期8/30；§5.2，监听协议基本实现；PDF p.384 / 书内 p.356，OCR第20行 至 PDF p.390 / 书内 p.362，OCR第9行（含）；OCR 17906字符；下一断点 PDF p.390 / 书内 p.362，OCR第10行，Extensions to the Basic Coherence Protocol标题。
+- knowledge-chapter-5-cycle-06-coherence-extensions-limitations: 周期9/30；§5.2，一致性扩展、监听限制与实现；PDF p.390 / 书内 p.362，OCR第10行 至 PDF p.394 / 书内 p.366，OCR第8行（含）；OCR 11323字符；下一断点 PDF p.394 / 书内 p.366，OCR第9行，Performance of Symmetric Shared-Memory Multiprocessors标题。
+- knowledge-chapter-5-cycle-07-symmetric-memory-performance-basics: 周期10/30；§5.3，对称共享存储性能基础；PDF p.394 / 书内 p.366，OCR第9行 至 PDF p.397 / 书内 p.369，OCR第48行（含）；OCR 9078字符；下一断点 PDF p.397 / 书内 p.369，OCR第49行，Performance Measurements of the Commercial Workload标题。
+- knowledge-chapter-5-cycle-08-commercial-workload-performance: 周期11/30；§5.3，商业负载与共享存储性能；PDF p.397 / 书内 p.369，OCR第49行 至 PDF p.406 / 书内 p.378，OCR第43行（含）；OCR 19730字符；下一断点 PDF p.406 / 书内 p.378，OCR第44行，§5.4 Distributed Shared-Memory and Directory-Based Coherence标题。
+- knowledge-chapter-5-cycle-09-distributed-shared-memory: 周期12/30；§5.4，分布式共享存储与目录一致性；PDF p.406 / 书内 p.378，OCR第44行 至 PDF p.408 / 书内 p.380，OCR第117行（含）；OCR 5308字符；下一断点 PDF p.408 / 书内 p.380，OCR第118行，Directory-Based Cache Coherence Protocols: The Basics标题。
+- knowledge-chapter-5-cycle-10-directory-protocol-basics: 周期13/30；§5.4，目录协议基础；PDF p.408 / 书内 p.380，OCR第118行 至 PDF p.410 / 书内 p.382，OCR第33行（含）；OCR 6361字符；下一断点 PDF p.410 / 书内 p.382，OCR第34行，An Example Directory Protocol标题。
+- knowledge-chapter-5-cycle-11-example-directory-protocol: 周期14/30；§5.4，目录协议示例；PDF p.410 / 书内 p.382，OCR第34行 至 PDF p.414 / 书内 p.386，OCR第49行（含）；OCR 10033字符；下一断点 PDF p.414 / 书内 p.386，OCR第50行，§5.5 Synchronization: The Basics标题。
+- knowledge-chapter-5-cycle-12-synchronization-basics: 周期15/30；§5.5，同步基础与原子原语；PDF p.414 / 书内 p.386，OCR第50行 至 PDF p.417 / 书内 p.389，OCR第26行（含）；OCR 8020字符；下一断点 PDF p.417 / 书内 p.389，OCR第27行，Implementing Locks Using Coherence标题。
+- knowledge-chapter-5-cycle-13-locks-and-barriers: 周期16/30；§5.5，用一致性实现锁与屏障；PDF p.417 / 书内 p.389，OCR第27行 至 PDF p.420 / 书内 p.392，OCR第4行（含）；OCR 6831字符；下一断点 PDF p.420 / 书内 p.392，OCR第5行，§5.6页首锚点（Models of Memory Consistency）。
+- knowledge-chapter-5-cycle-14-sequential-consistency: 周期17/30；§5.6，顺序一致性模型；PDF p.420 / 书内 p.392，OCR第5行 至 PDF p.422 / 书内 p.394，OCR第43行（含）；OCR 7997字符；下一断点 PDF p.422 / 书内 p.394，OCR第44行，Relaxed Consistency Models: The Basics标题。
+- knowledge-chapter-5-cycle-15-relaxed-consistency-basics: 周期18/30；§5.6，宽松一致性模型基础；PDF p.422 / 书内 p.394，OCR第44行 至 PDF p.423 / 书内 p.395，OCR第25行（含）；OCR 1935字符；下一断点 PDF p.423 / 书内 p.395，OCR第26行，Final Remarks on Consistency Models标题。
+- knowledge-chapter-5-cycle-16-consistency-model-final-remarks: 周期19/30；§5.6，一致性模型收束；PDF p.423 / 书内 p.395，OCR第26行 至 PDF p.423 / 书内 p.395，OCR第42行（含）；OCR 961字符；下一断点 PDF p.423 / 书内 p.395，OCR第43行，§5.7 Crosscutting Issues标题。
+- knowledge-chapter-5-cycle-17-compiler-consistency: 周期20/30；§5.7，编译器优化与一致性模型；PDF p.423 / 书内 p.395，OCR第43行 至 PDF p.424 / 书内 p.396，OCR第21行（含）；OCR 1601字符；下一断点 PDF p.424 / 书内 p.396，OCR第22行，Using Speculation to Hide Latency in Strict Consistency Models标题。
+- knowledge-chapter-5-cycle-18-speculation-strict-consistency: 周期21/30；§5.7，以推测隐藏严格一致性延迟；PDF p.424 / 书内 p.396，OCR第22行 至 PDF p.425 / 书内 p.397，OCR第17行（含）；OCR 2874字符；下一断点 PDF p.425 / 书内 p.397，OCR第18行，Inclusion and Its Implementation标题。
+- knowledge-chapter-5-cycle-19-inclusion-implementation: 周期22/30；§5.7，包含性及其实现；PDF p.425 / 书内 p.397，OCR第18行 至 PDF p.426 / 书内 p.398，OCR第28行（含）；OCR 3805字符；下一断点 PDF p.426 / 书内 p.398，OCR第29行，Performance Gains from Using Multiprocessing and Multithreading标题。
+- knowledge-chapter-5-cycle-20-multiprocessing-multithreading-gains: 周期23/30；§5.7，多处理与多线程的性能收益；PDF p.426 / 书内 p.398，OCR第29行 至 PDF p.428 / 书内 p.400，OCR第4行（含）；OCR 2975字符；下一断点 PDF p.428 / 书内 p.400，OCR第5行，§5.8页首锚点（Putting It All Together）。
+- knowledge-chapter-5-cycle-21-multicore-processors-performance: 周期24/30；§5.8，多核处理器及其性能；PDF p.428 / 书内 p.400，OCR第5行 至 PDF p.432 / 书内 p.404，OCR第19行（含）；OCR 11020字符；下一断点 PDF p.432 / 书内 p.404，OCR第20行，Putting Multicore and SMT Together标题。
+- knowledge-chapter-5-cycle-22-multicore-smt: 周期25/30；§5.8，多核与SMT组合；PDF p.432 / 书内 p.404，OCR第20行 至 PDF p.433 / 书内 p.405，OCR第27行（含）；OCR 2236字符；下一断点 PDF p.433 / 书内 p.405，OCR第28行，Fallacies and Pitfalls正文起始段。
+- knowledge-chapter-5-cycle-23-fallacies-pitfalls: 周期26/30；§5.9，线程级并行谬误与陷阱；PDF p.433 / 书内 p.405，OCR第28行 至 PDF p.437 / 书内 p.409，OCR第46行（含）；OCR 11482字符；下一断点 PDF p.437 / 书内 p.409，OCR第47行，§5.10 Concluding Remarks标题。
+- knowledge-chapter-5-cycle-24-concluding-remarks: 周期27/30；§5.10，第5章结论；PDF p.437 / 书内 p.409，OCR第47行 至 PDF p.440 / 书内 p.412，OCR第4行（含）；OCR 6344字符；下一断点 PDF p.440 / 书内 p.412，OCR第5行，§5.11页首锚点（Historical Perspectives and References）。
+- knowledge-chapter-5-cycle-25-historical-perspectives-case-study-one: 周期28/30；§5.11与Case Study 1，历史脉络与单芯片多核案例；PDF p.440 / 书内 p.412，OCR第5行 至 PDF p.446 / 书内 p.418，OCR第21行（含）；OCR 12754字符；下一断点 PDF p.446 / 书内 p.418，OCR第22行，Case Study 2: Simple Directory-Based Coherence标题。
+- knowledge-chapter-5-cycle-26-directory-case-studies: 周期29/30；Case Study 2–3，目录一致性案例；PDF p.446 / 书内 p.418，OCR第22行 至 PDF p.454 / 书内 p.426，OCR第23行（含）；OCR 16569字符；下一断点 PDF p.454 / 书内 p.426，OCR第24行，Exercises标题。
+- knowledge-chapter-5-cycle-27-exercises: 周期30/30；第5章 Exercises，第5章练习；PDF p.454 / 书内 p.426，OCR第24行 至 PDF p.457 / 书内 p.429，OCR第65行（含）；OCR 11831字符；下一断点 PDF p.458 / 书内 p.430，OCR第1行，第6章目录页起点（§6.1 Introduction条目，尚未进入正文）。
+
+## 计算机体系结构自动学习批次（2026-08-19，第三批，第6章完成后提前结束）
+
+- knowledge-chapter-6-cycle-01-roadmap-introduction: 周期1/15；第6章目录与§6.1；PDF p.458–464 / 书内 p.430–436；OCR 15854字符。
+- knowledge-chapter-6-cycle-02-programming-models-workloads: 周期2/15；§6.2；PDF p.464–469 / 书内 p.436–441；OCR 12005字符。
+- knowledge-chapter-6-cycle-03-network-architecture: 周期3/15；§6.3；PDF p.469–474 / 书内 p.441–446；OCR 10639字符。
+- knowledge-chapter-6-cycle-04-infrastructure-costs: 周期4/15；§6.4；PDF p.474–483 / 书内 p.446–455；OCR 20655字符。
+- knowledge-chapter-6-cycle-05-cloud-computing: 周期5/15；§6.5；PDF p.483–489 / 书内 p.455–461；OCR 18133字符。
+- knowledge-chapter-6-cycle-06-crosscutting-network-energy: 周期6/15；§6.6；PDF p.489–492 / 书内 p.461–464；OCR 7388字符。
+- knowledge-chapter-6-cycle-07-google-wsc-case: 周期7/15；§6.7；PDF p.492–499 / 书内 p.464–471；OCR 15821字符。
+- knowledge-chapter-6-cycle-08-fallacies-pitfalls: 周期8/15；§6.8；PDF p.499–503 / 书内 p.471–475；OCR 13552字符。
+- knowledge-chapter-6-cycle-09-concluding-remarks: 周期9/15；§6.9；PDF p.503–504 / 书内 p.475–476；OCR 3150字符。
+- knowledge-chapter-6-cycle-10-historical-perspectives: 周期10/15；§6.10；PDF p.504 / 书内 p.476；OCR 334字符。
+- knowledge-chapter-6-cycle-11-tco-case-study: 周期11/15；Case Study 1；PDF p.504–506 / 书内 p.476–478；OCR 4545字符。
+- knowledge-chapter-6-cycle-12-resource-allocation-case-study: 周期12/15；Case Study 2；PDF p.506–507 / 书内 p.478–479；OCR 3021字符。
+- knowledge-chapter-6-cycle-13-exercises-parallelism-reliability: 周期13/15；Exercises前段；PDF p.507–511 / 书内 p.479–483；OCR 12455字符。
+- knowledge-chapter-6-cycle-14-exercises-network-power-cost: 周期14/15；Exercises中段；PDF p.512–516 / 书内 p.484–488；OCR 14260字符。
+- knowledge-chapter-6-cycle-15-exercises-energy-manageability: 周期15/15；Exercises后段；PDF p.517–521 / 书内 p.489–493；OCR 13122字符；六章正文完成。
+- knowledge-chapter-6-completion-summary: 第6章四要素完成摘要；完成边界PDF p.521 / 书内 p.493；PDF p.522起为附录A。
+- computer-architecture-quantitative-approach-index: 六章知识库统一检索入口，按章节、主题、公式与常见问题路由到具体memory。
