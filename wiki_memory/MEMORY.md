@@ -29,7 +29,7 @@
 - [UVM 1.2 Codec Integrated Example](knowledge_uvm_15_codec_example.md) — integrated/codec 端到端 reg model、APB/VIP agent、scoreboard、phase jump 与 ISR 流程
 - [UVM 1.2 Callbacks/Recording/Cmdline](knowledge_uvm_16_callbacks_recording_cmdline.md) — callbacks、transaction recording/database/stream/recorder 与命令行 plusargs 处理路径
 - [UVM 1.2 Final Infrastructure](knowledge_uvm_17_final_infrastructure.md) — event/barrier/pool/queue/DAP/links/traversal/misc/global helpers 最后一轮源码查漏
-- [超标量处理器设计索引](knowledge-superscalar-processor-design-index.md) — 《超标量处理器设计》学习进度、首个周期与后续学习入口
+- [超标量处理器设计索引](knowledge-superscalar-processor-design-index.md) — 《超标量处理器设计》学习进度、周期 01–46 与后续学习入口
 - [计算机体系结构：量化研究方法（第5版）索引](knowledge-index-computer-architecture-quantitative-approach.md) — 当前 PDF 的学习进度、已失效旧映射说明、双页码规则及精确断点
 - [第1章：计算机类别](knowledge-chapter-1-classes-of-computers.md) — §1.2 的服务器、Cluster/WSC、嵌入式系统、并行性与 Flynn 分类
 - [第1章：定义计算机体系结构](knowledge-chapter-1-defining-computer-architecture.md) — §1.3 的 ISA、微体系结构、硬件三层定义及设计权衡

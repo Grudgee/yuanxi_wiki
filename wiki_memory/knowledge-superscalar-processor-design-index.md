@@ -38,12 +38,27 @@ description: 《超标量处理器设计》本地学习索引、断点和后续�
 - [周期 29：一般解码](knowledge-superscalar-processor-design-cycle-29-instruction-decode-general.md) — 指令缓存、固定长度与宽解码
 - [周期 30：解码特殊情况](knowledge-superscalar-processor-design-cycle-30-instruction-decode-special-cases.md) — 分支、乘累加、变址和多寄存器指令
 - [周期 31：跨章衔接总结](knowledge-superscalar-processor-design-cycle-31-chapter-transitions-summary.md) — 从第3章到第6章的主线串联
+- [周期 32：复杂解码与条件执行](knowledge-superscalar-processor-design-cycle-32-decode-complex-instructions.md) — 复杂指令拆分、条件执行和 CPSR 依赖
+- [周期 33：重命名动机](knowledge-superscalar-processor-design-cycle-33-renaming-motivation.md) — RAW/WAR/WAW、memory/control/structure 相关
+- [周期 34：重命名实现方式](knowledge-superscalar-processor-design-cycle-34-renaming-implementation-ways.md) — ARF 扩展、统一 PRF 和 ROB 三种实现
+- [周期 35：RAT 与 Free List](knowledge-superscalar-processor-design-cycle-35-rat-free-list-flow.md) — mapping table、空闲列表与重命名流程
+- [周期 36：超标量重命名](knowledge-superscalar-processor-design-cycle-36-superscalar-renaming.md) — 同周期多指令重命名和 RAW 处理
+- [周期 37：Checkpoint 恢复](knowledge-superscalar-processor-design-cycle-37-checkpoint-recovery.md) — GC、MBC/CBC 和快速恢复
+- [周期 38：WALK 与分发](knowledge-superscalar-processor-design-cycle-38-walk-and-dispatch.md) — ROB 逆向恢复 RAT 和 Dispatch 入口
+- [周期 39：发射概述](knowledge-superscalar-processor-design-cycle-39-issue-overview.md) — Issue Queue、ready 状态和发射角色
+- [周期 40：发射流水线](knowledge-superscalar-processor-design-cycle-40-issue-pipeline.md) — Wake-up/Select/RF read/Execute 分阶段
+- [周期 41：发射分配](knowledge-superscalar-processor-design-cycle-41-issue-allocation.md) — 压缩队列、空位扫描和写入控制
+- [周期 42：发射仲裁](knowledge-superscalar-processor-design-cycle-42-issue-arbitration.md) — 选择规则、FU 级仲裁和 tag 广播
+- [周期 43：唤醒机制](knowledge-superscalar-processor-design-cycle-43-wakeup-single-multicycle.md) — 单周期与多周期指令唤醒、延迟广播
+- [周期 44：load 推测唤醒](knowledge-superscalar-processor-design-cycle-44-load-speculative-wakeup.md) — D-Cache/TLB 不确定性、IW/SW 窗口
+- [周期 45：执行与 FU](knowledge-superscalar-processor-design-cycle-45-execution-fu-conditional.md) — 第9章执行单元、条件执行和 select uOP
+- [周期 46：旁路与 Cluster](knowledge-superscalar-processor-design-cycle-46-bypass-cluster-memory-acceleration.md) — 旁路网络、操作数选择、Cluster 和存储器指令加速
 
 ## 当前状态
 
 - 书籍已定位为 `books/超标量处理器设计.pdf`。
-- 当前已完成前 31 个学习周期，覆盖第 1 章、第 2 章、第 3 章、第 4 章、第 5 章和第 6 章前半部分。
+- 当前已完成前 46 个学习周期，覆盖第 1 章到第 9 章的大部分正文。
 
 ## 推荐下一步
 
-- 继续第 6 章后续内容，或转入第 7 章及后续综合案例。
+- 继续第 9 章存储器指令加速后半，或转入第 10 章提交。
