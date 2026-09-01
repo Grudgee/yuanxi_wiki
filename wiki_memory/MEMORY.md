@@ -2,8 +2,20 @@
 - [UVM 1.2 TLM1](knowledge_uvm_8_tlm1.md) — TLM1 ports/exports/imps、analysis port、FIFO、req/rsp channel 学习记忆
 - [UVM 1.2 TLM2](knowledge_uvm_9_tlm2.md) — TLM2 transport interface、sockets、generic payload、time 与 extensions 学习记忆
 - [UVM 1.2 Sequences/Sequencer](knowledge_uvm_10_sequences_sequencer.md) — sequence_item、start/finish item、sequencer arbitration、driver pull interface 与 default sequence 学习记忆
-- [AXIACE5 知识库索引](knowledge_index_axiace5.md) — AXI/ACE5 文档学习进度与章节索引
-- [D4/D5 ACE 写事务与 Snoop 要求](knowledge_d4_d5_ace_write_snoop_requirements.md) — Clean/Make/Write/Evict、重叠写和 snoop 规则
+- [AXIACE5 重新学习索引](knowledge_axiace5_relearn_index.md) — 2026-08-21 从 `amba_prot/AXIACE5.pdf` 重建的 AXI/ACE5 本地记忆入口
+- [AXIACE5 前言、A1/A2](knowledge_axiace5_front_matter_a1_a2.md) — PDF 前言、目录、AXI 目标特性、架构和信号描述补充
+- [AXIACE5 从 p1 重学 20 周期](knowledge_axiace5_restart_from_p1.md) — 从 PDF 第 1 页重新学习的 20 个周期进度日志
+- [AXIACE5 周期 1：p1-p25 重学](knowledge_axiace5_cycle_01_p1_25_restart.md) — 从头重学的第 1 个周期，前言、目录、A1/A2 起始与 A3 入口
+- [AXIACE5 从头重学周期 2-21](knowledge_axiace5_restart_cycles_02_21.md) — 从 PDF 第 26 页起的 20 个周期进度日志，覆盖 A1 到 D8 起始
+- [AXIACE5 AXI 核心事务](knowledge_axiace5_core_axi.md) — A3/A5/A6：VALID/READY、响应、ID 与 ordering 基础
+- [AXIACE5 Transaction Attributes](knowledge_axiace5_transaction_attributes.md) — A4：`AxCACHE`、Modifiable/Non-modifiable 与原子可见性约束
+- [AXIACE5 Atomic Accesses](knowledge_axiace5_atomic_accesses.md) — A7：single-copy/multi-copy atomicity、exclusive、locked 与 `AxLOCK`
+- [AXIACE5 AXI5/ACE 边界](knowledge_axiace5_axi5_ace_boundary.md) — B1/C1/C2/D1-D5 边界摘要与后续抽取入口
+- [AXIACE5 周期 01-05：D5-D8](knowledge_axiace5_cycles_01_05_d5_d8.md) — D5 Snoop 后半、D6 Interconnect、D7 Cache Maintenance、D8 Barrier 起始
+- [AXIACE5 周期 06-10：D8-D14](knowledge_axiace5_cycles_06_10_d8_d14.md) — D8 Barrier、D9 ACE Exclusive、D10-D14 与 DVM 摘要
+- [AXIACE5 周期 11-12：E1 Atomic/Stash](knowledge_axiace5_cycles_11_12_e1_atomic_stash.md) — AMBA 5 Atomic transactions、`AWATOP`、Cache stashing、Deallocating transactions
+- [AXIACE5 周期 13-17：E1 AMBA5 Features](knowledge_axiace5_cycles_13_17_e1_features.md) — User Loopback、QoS Accept、Wake-up、Coherency Connection、Untranslated、MPAM、MTE、Prefetch、WriteZero
+- [AXIACE5 周期 18-20：E2-F3](knowledge_axiace5_cycles_18_20_e2_f3.md) — Interface/data protection、ACE5、ACE5-Lite、ACE5-LiteDVM 起始，下一断点 PDF p.439
 - [避免 memory agent 使用 worktree](avoid-worktree-for-memory-agents.md) — 读取本地 memory 时避免 `/.claude` 路径错误
 - [AMBA APB 知识库索引](knowledge_apb_index.md) — APB v2.0 文档学习进度、章节索引与后续学习入口
 - [UVM 1.2 源码知识库索引](knowledge_uvm_index.md) — UVM 1.2 源码深度学习进度、源码架构与主题入口
@@ -17,6 +29,7 @@
 - [UVM 1.2 Codec Integrated Example](knowledge_uvm_15_codec_example.md) — integrated/codec 端到端 reg model、APB/VIP agent、scoreboard、phase jump 与 ISR 流程
 - [UVM 1.2 Callbacks/Recording/Cmdline](knowledge_uvm_16_callbacks_recording_cmdline.md) — callbacks、transaction recording/database/stream/recorder 与命令行 plusargs 处理路径
 - [UVM 1.2 Final Infrastructure](knowledge_uvm_17_final_infrastructure.md) — event/barrier/pool/queue/DAP/links/traversal/misc/global helpers 最后一轮源码查漏
+- [超标量处理器设计索引](knowledge-superscalar-processor-design-index.md) — 《超标量处理器设计》学习进度、首个周期与后续学习入口
 - [计算机体系结构：量化研究方法（第5版）索引](knowledge-index-computer-architecture-quantitative-approach.md) — 当前 PDF 的学习进度、已失效旧映射说明、双页码规则及精确断点
 - [第1章：计算机类别](knowledge-chapter-1-classes-of-computers.md) — §1.2 的服务器、Cluster/WSC、嵌入式系统、并行性与 Flynn 分类
 - [第1章：定义计算机体系结构](knowledge-chapter-1-defining-computer-architecture.md) — §1.3 的 ISA、微体系结构、硬件三层定义及设计权衡
