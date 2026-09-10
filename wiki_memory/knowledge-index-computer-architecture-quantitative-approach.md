@@ -10,6 +10,7 @@ metadata:
 
 # 文档身份与引用规则
 
+- 离线问答优先读 `knowledge-computer-architecture-question-map.md`，再进入具体章节记忆。
 - 文档：`/home/mt/公共的/yuanxi_cc/wiki_files/books/计算机体系结构量化研究方法.pdf`
 - 当前文件大小：约 11.9 MB（PDF 阅读器报告，2026-08-11）。
 - 版本：第 5 版；作者 John L. Hennessy、David A. Patterson。版本信息已由前言核验。

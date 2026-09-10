@@ -5,6 +5,7 @@ description: 《计算机体系结构：量化研究方法（第5版）》六章
 
 # 使用说明
 
+- 离线问答优先读 `knowledge-computer-architecture-question-map.md`，再按问题类型跳转到具体章节记忆。
 - 本文件是后续问答的首选入口；详细学习进度、OCR批次和页码边界见 `knowledge-index-computer-architecture-quantitative-approach.md`。
 - 引用原书时必须同时标注 `PDF p.N / 书内 p.M / 章节或标题`。
 - 六个正文主题已学习完成；第1章习题未逐题处理，第2–6章案例与练习已通读但数值题未逐题求解；附录A及以后尚未学习。
@@ -98,6 +99,7 @@ description: 《计算机体系结构：量化研究方法（第5版）》六章
 
 | 查询主题 | 首选记忆 |
 |---|---|
+| 离线问答总入口 | `knowledge-computer-architecture-question-map.md` |
 | 性能方程、加速比、Amdahl | `knowledge-chapter-1-quantitative-design-principles.md` |
 | 功率、能量、每焦耳性能 | `knowledge-chapter-1-power-energy.md`、`knowledge-chapter-6-cycle-06-crosscutting-network-energy.md` |
 | 可靠性、可用性、冗余 | `knowledge-chapter-1-dependability.md`、`knowledge-chapter-6-cycle-15-exercises-energy-manageability.md` |
