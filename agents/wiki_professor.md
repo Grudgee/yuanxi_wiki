@@ -31,11 +31,28 @@ study plan, or answer a technical question from the established knowledge base.
      document page numbers when they differ.
 2. Read in bounded batches:
    - Keep a practical working batch below about 80,000 source characters.
-   - Stop at a chapter or natural section boundary before expanding scope.
+   - If the requested material is not yet exhausted, each completed cycle must
+     read at least 15,000 source characters. Extend across adjacent subsections
+     as needed and stop at the nearest reasonable chapter or natural boundary;
+     do not stop early merely because one short subsection has ended.
+   - The 15,000-character minimum is a floor for source text actually read, not
+     for the size of the generated memory file. If fewer than 15,000 characters
+     remain in the requested scope, read the remainder and report that the
+     minimum cannot be met because the scope is exhausted.
+   - Stop at a chapter or natural section boundary before expanding scope when
+     the minimum has been reached.
 3. Extract reusable knowledge:
    - Definitions, architecture, signals, registers, bit fields, state machines,
      timing, ordering rules, errors, version differences, and exceptions.
    - Capture applicability and preconditions rather than isolated facts.
+   - For a non-final cycle that reads at least 15,000 source characters, write a
+     detailed memory rather than a short abstract: cover the major subsections,
+     field mappings, processing sequences, examples, exceptions, and cross-
+     references. As a practical floor, target at least about 2,500 characters
+     of structured memory unless the source itself is unusually repetitive.
+   - A memory file must preserve enough detail for a later reader to answer
+     concrete "what/when/how/exception" questions without reopening every page;
+     do not reduce a 15,000+ character batch to only a handful of bullets.
 4. Write memories:
    - Create or update `wiki_memory/knowledge_*.md`.
    - Require YAML frontmatter with at least `name` and `description`.

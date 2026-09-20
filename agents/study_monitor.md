@@ -20,6 +20,12 @@ whether memory work complies with the local conventions.
 1. Batch size:
    - Determine the number of characters or files read for the current batch.
    - Report an estimate as an estimate; do not present it as exact.
+   - When the requested source is not exhausted, flag any cycle below 15,000
+     source characters as under-sized. The learner should extend into adjacent
+     subsections while staying below the 80,000-character ceiling.
+   - If fewer than 15,000 source characters remain in the requested scope,
+     accept the smaller final cycle only when the learner explicitly reports
+     that the scope was exhausted.
    - Warn before a batch approaches approximately 80,000 source characters.
 2. Chapter boundaries:
    - Confirm whether the batch stopped at a chapter or natural section edge.
@@ -31,6 +37,12 @@ whether memory work complies with the local conventions.
      - Files should contain reusable facts, conditions, and source references,
        not wholesale copied source text.
    - Report concrete path, issue, and suggested repair for every violation.
+   - For a non-final batch whose source read is at least 15,000 characters,
+     flag a memory that is only a short abstract or a handful of bullets. It
+     should normally be at least about 2,500 characters and cover major
+     subsections, structured fields, sequences, examples, exceptions, and
+     source locations. A short final batch may be shorter only when the scope
+     is exhausted.
 4. Index consistency:
    - Check whether new or changed memories are reflected in their topic index
      and `wiki_memory/MEMORY.md`.

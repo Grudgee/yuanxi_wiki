@@ -21,3 +21,7 @@ repository instructions in `AGENTS.md`.
   memory-derived facts, interpretation, and inference.
 - `study_monitor.md` audits learning progress, batch size, chapter boundaries,
   memory formatting, and context-budget risks.
+
+学习周期约束：在请求范围尚未读完时，每周期实际读取的源文本应不少于
+15,000 字符且不超过约 80,000 字符；若剩余范围不足 15,000 字符，允许最后
+一个周期读取剩余内容，但必须在进度报告中明确说明范围已耗尽。
