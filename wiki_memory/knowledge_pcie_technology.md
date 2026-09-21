@@ -5,7 +5,7 @@ description: PCI Express Technology 3.0 中文版已完成学习内容的统一�
 
 # PCIe Technology 3.0 学习知识库
 
-> 本文件将已完成学习的分散笔记合并为按章节连续阅读的知识库。当前完成边界为第 7 章 §7.5；下一入口为第 7 章 §7.6 等时服务支持。
+> 本文件将已完成学习的分散笔记合并为按章节连续阅读的知识库。第6章已完整覆盖§6.1–§6.7.3；当前完成边界为第10章，下一入口为第11章物理层逻辑（Gen1/Gen2）。
 
 ## 内容索引
 
@@ -15,7 +15,7 @@ description: PCI Express Technology 3.0 中文版已完成学习内容的统一�
 - [第 4 章：地址空间与事务路由](#第-4-章地址空间与事务路由)
 - [第 5 章：TLP Elements（已完成至§5.2.4.5）](#第-5-章tlp-elements已完成至5245)
 - [第 5 章：TLP Elements（已完成至§5.2.5.5）](#第-5-章tlp-elements已完成至5255)
-- [第 6 章：流量控制（已完成至§6.4）](#第-6-章流量控制已完成至64)
+- [第 6 章：流量控制（完整至§6.7.3）](#第-6-章流量控制完整至673)
 - [第 7 章：QoS（已完成至§7.5）](#第-7-章qos已完成至75)
 - [知识关联与当前断点](#知识关联与当前断点)
 - [原始分散笔记](#原始分散笔记)
@@ -113,7 +113,9 @@ ECRC 是可选的端到端检查；LCRC 和 Sequence Number 是逐链路可靠�
 
 ---
 
-# 第 3 章：配置
+# 第 3 章：配置（重学版）
+
+本章已按新批次规则重学为两个详细周期：周期1覆盖PDF p.90–105的§3.1–§3.10，周期2覆盖PDF p.106–121的§3.11–§3.14。两周期源文本分别约17,375和17,908字符，memory文件均扩展了字段、流程、异常、枚举和工具细节。
 
 ## 3.1 配置空间和 B/D/F
 
@@ -147,7 +149,9 @@ Arbor 是用于 PCI/PCI-X/PCIe 调试和学习的工具，可以扫描系统中�
 
 ---
 
-# 第 4 章：地址空间与事务路由
+# 第 4 章：地址空间与事务路由（重学版）
+
+本章已按新批次规则重学并拆成两个详细 memory：周期1覆盖 PDF p.122–146、§4.1–§4.3，周期2覆盖 PDF p.147–170、§4.4–§4.7。以下为连续阅读摘要；字段、流程和例外以两个周期文件为准。
 
 ## 4.1 地址空间
 
@@ -210,11 +214,26 @@ DLLP 只在相邻的两个端口之间传输，到达对端 Data Link Layer 后�
 
 第5章前五个周期覆盖包协议基础、TLP组包/拆包、通用Header、Fmt/Type编码、Digest/ECRC、字节使能、事务描述符和数据荷载规则。TLP由事务层生成，数据链路层添加序列号/LCRC并保存重传副本，物理层执行组帧、条带化、扰码和编码；接收端逆向处理并通过Ack/Nak完成链路可靠性。Header的Fmt决定3DW/4DW及是否带数据，Type决定事务类别；First/Last DW Byte Enable处理非对齐首尾字节，Requester ID+Tag构成事务ID，TC映射到VC。
 
+## 第 7 章 §7.6：等时服务支持
+
+等时服务使用 TBWRR 时间规划、TC/VC、端口仲裁和软件 Broker，为视频/实时控制流提供带宽、延迟和周期保证。Endpoint、Switch、Root Complex、流控、电源管理和错误恢复必须共同满足端到端预算。
+
+## 第 8 章：事务排序
+
+事务排序围绕生产者/消费者同步模型，约束 Posted/Non-Posted、读写、VC 和不同 Ordering 属性之间的可见顺序。Relaxed Ordering、Weak Ordering 和 IDO 可以放宽无依赖流量，但不能越过必要同步；VC 分离和固定资源规则还承担死锁避免职责。
+
+## 第 9–10 章：DLLP 与 Ack/Nak
+
+DLLP 是相邻链路的固定8字节本地包，承载 Ack/Nak、Flow Control、Power Management 和 Vendor-Specific 信息。Ack/Nak 通过12-bit Sequence、32-bit LCRC、Replay Buffer、REPLAY_TIMER、NEXT_RCV_SEQ 和 AckNak_LATENCY_TIMER 完成链路级 TLP 检测与重放；Gen1/Gen2/Gen3 定时器和 Switch 直通模式影响延迟与恢复。
+
+## 第 11–14 章：物理层、电气规范与链路训练
+
+第11章完整覆盖 Gen1/Gen2 物理层发送与接收：发送缓冲/多路复用、宽链路 byte striping、扰码、8b/10b、TS1/TS2/EIOS/FTS/SKP/EIEOS、有序集、CDR、弹性缓冲、lane 去偏移、解码错误、ASPM 与训练入口（PDF p.360–394）。第12章完整覆盖 Gen3 8.0 GT/s 的 128b/130b：同步头、data/ordered-set block、STP/SDP/END/EDB Token、块对齐、Gen3 striping、LFSR 扰码、时钟补偿、去偏移、包过滤和 loopback（PDF p.396–426）。第13章完整覆盖电气规范：参考时钟与 SSC、Tx/Rx、通道损耗、去加重、三抽头 Tx FIR、预设/系数、眼图、抖动、CTLE/DFE 与电源状态（PDF p.428–480）。第14章覆盖至 §14.8.5：前段为 TS1/TS2、LTSSM、Detect、Polling、Configuration，后段为 Configuration 示例、L0 改变、Recovery 与均衡概览（PDF p.482–约540）。
+
 ## 当前学习断点
 
-- 已完成：第 1–4 章、第 5 章 §5.1–§5.2.5.5、第 6 章 §6.1–§6.4，以及第 7 章 §7.1–§7.5。
-- 下一入口：第 7 章 §7.6 **等时服务支持**。
-- 下一步重点：TLP Header、Format/Type、Length、Requester ID、Completer ID、Tag、Byte Enable、Address、Completion Status、First/Last DW Byte Enable、数据载荷，以及各类 TLP 的具体格式。
+- 已完成：第 1–4 章、第 5 章 §5.1–§5.2.5.5、第 6 章 §6.1–§6.7.3、第 7 章 §7.1–§7.6、第 8 章、第 9 章和第 10 章。
+- 下一入口：第14章均衡四阶段详述（约 PDF p.541 起）。
 - 本文件没有把第 5 章及以后尚未学习的正文当作已完成内容。
 
 ## 统一来源与适用说明
@@ -228,19 +247,17 @@ DLLP 只在相邻的两个端口之间传输，到达对端 Data Link Layer 后�
 
 以下文件保留为细粒度来源和后续增量修订入口：
 
+- [第11章：物理层逻辑（Gen1/Gen2）](knowledge_pcie_chapter_11_physical_layer_logic.md)
+- [第12章：Gen3 128b/130b](knowledge_pcie_chapter_12_gen3_128b130b.md)
+- [第13章：物理层电气规范](knowledge_pcie_chapter_13_electrical_specifications.md)
+- [第14章前段：LTSSM 与初始训练](knowledge_pcie_chapter_14_link_training_ltssm_front.md)
+- [第14章后段：Configuration、Recovery 与均衡](knowledge_pcie_chapter_14_link_training_ltssm_back.md)
+
 - [第 1 章：背景](knowledge_pcie_chapter_1_background.md)
 - [第 2 章：简介、链路与拓扑](knowledge_pcie_chapter_2_introduction_links_topology.md)
 - [第 2 章：体系结构概述](knowledge_chapter_2_pcie_architecture_overview.md)
 - [第 2 章：协议回顾](knowledge_pcie_chapter_2_protocol_review.md)
-- [第 3 章：配置基础](knowledge_pcie_chapter_3_configuration_basics.md)
-- [第 3 章：配置路由与枚举](knowledge_pcie_chapter_3_configuration_routing_enumeration.md)
-- [第 3 章：MindShare Arbor](knowledge_pcie_chapter_3_section_3_14_arbor.md)
-- [第 4 章：地址空间](knowledge_pcie_chapter_4_section_4_1_address_spaces.md)
-- [第 4 章：BAR](knowledge_pcie_chapter_4_section_4_2_bars.md)
-- [第 4 章：Base/Limit](knowledge_pcie_chapter_4_section_4_3_base_limit.md)
-- [第 4 章：地址路由寄存器](knowledge_pcie_chapter_4_section_4_4_address_routing_registers.md)
-- [第 4 章：TLP 路由基础](knowledge_pcie_chapter_4_section_4_5_tlp_routing_basics.md)
-- [第 4 章：ID 路由](knowledge_pcie_chapter_4_section_4_6_1_id_routing.md)
-- [第 4 章：地址路由](knowledge_pcie_chapter_4_section_4_6_2_address_routing.md)
-- [第 4 章：隐式路由](knowledge_pcie_chapter_4_section_4_6_3_implicit_routing.md)
-- [第 4 章：DLLP 和 Ordered Set 不会被路由](knowledge_pcie_chapter_4_section_4_7_dllp_ordered_set_not_routed.md)
+- [第 3 章周期1：BDF、配置空间与访问机制](knowledge_pcie_chapter_3_cycle_1_bdf_config_access.md)
+- [第 3 章周期2：枚举、热插拔与Arbor](knowledge_pcie_chapter_3_cycle_2_enumeration_arbor.md)
+- [第 4 章周期1：地址空间、BAR与Base/Limit](knowledge_pcie_chapter_4_cycle_1_address_spaces_bars_windows.md)
+- [第 4 章周期2：地址路由与TLP路由全章收束](knowledge_pcie_chapter_4_cycle_2_routing_all.md)

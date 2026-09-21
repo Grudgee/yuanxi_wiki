@@ -171,18 +171,10 @@
 - [第2章：简介、链路与拓扑](knowledge_pcie_chapter_2_introduction_links_topology.md) — 第二周期完成 §2.1–§2.1.4.6，覆盖串行传输、Gen1–Gen3 带宽计算、差分/时钟恢复、链路宽度、RC/Switch/Bridge/Endpoint 与软件枚举；PDF p.41–p.56，下一入口为 §2.2（约 p.56 以后）。
 - [第2章：体系结构概述](knowledge_chapter_2_pcie_architecture_overview.md) — 本周期扩展覆盖 §2.1–§2.2.4.5，补充四层架构、TLP/DLLP、事务类型、Ack/Nak、QoS 与流量控制；PDF p.41–p.82，下一入口为 §2.3（约 p.83）。
 - [第2章：协议回顾](knowledge_pcie_chapter_2_protocol_review.md) — 第三周期完成 §2.3–§2.3.2，跟踪 MRd/CplD 从事务层到数据链路层、物理层及 Ack/Nak 重传；PDF p.83–p.90 左右，下一入口为第3章。
-- [第3章：配置基础](knowledge_pcie_chapter_3_configuration_basics.md) — 第四周期完成 §3.1–§3.5，覆盖 B/D/F、设备类型、配置空间、PCI 兼容空间与扩展配置空间；PDF p.90–p.96 左右，下一入口为 §3.6。
-- [第3章：配置路由与枚举核验](knowledge_pcie_chapter_3_configuration_routing_enumeration.md) — 完成 §3.6–§3.13.3 的 CF8h/CFCh、ECAM、Type 0/1、UR/CRS、单/多 RC 深度优先枚举核验；PDF p.94–p.118 左右。当前 PCIe 记忆中列出的待核验项已清零。
-- [第3章§3.14：MindShare Arbor](knowledge_pcie_chapter_3_section_3_14_arbor.md) — 第1周期；工具用于配置、memory、IO 地址读写、Function 扫描和 XML 译码；PDF p.118–p.121 / 书内 p.30–p.32 左右；源文本约 7,610 字符；下一入口为第4章 §4.1。
-- [第4章§4.1：地址空间](knowledge_pcie_chapter_4_section_4_1_address_spaces.md) — 第2周期；配置、MMIO/IO、P-MMIO/NP-MMIO 定义与预取条件；PDF p.122–p.124 / 书内 p.2–p.4；源文本约 10,343 字符；下一入口为 §4.2 BAR。
-- [第4章§4.2：BAR](knowledge_pcie_chapter_4_section_4_2_bars.md) — 第3周期；BAR 类型、全1评估、32/64-bit MMIO、IO、顺序评估和 Resizable BAR；PDF p.125–p.135 / 书内 p.5–p.15；源文本约 17,175 字符；下一入口为 §4.3 Base/Limit。
-- [第4章§4.3：Base/Limit](knowledge_pcie_chapter_4_section_4_3_base_limit.md) — 第4周期；Bridge 下游 P/NP-MMIO、IO 窗口、对齐粒度和无效范围配置；PDF p.136–p.146 / 书内 p.16–p.26；源文本约 13,217 字符；下一入口为 §4.4 地址路由寄存器检查。
-- [第4章§4.4：地址路由寄存器检查](knowledge_pcie_chapter_4_section_4_4_address_routing_registers.md) — 第5周期；区分 Bridge 自身 BAR 与下游 Base/Limit，核对多分支范围汇总；PDF p.147–p.148 起 / 书内 p.27–p.28 起；源文本约 12,374 字符；下一入口为 §4.5 TLP 路由基础。
-- [第4章§4.5：TLP 路由基础](knowledge_pcie_chapter_4_section_4_5_tlp_routing_basics.md) — 本轮周期1；入口端口三路决策、三种 TLP 路由方法、拆分事务与 Posted/Non-Posted；PDF p.148–p.156 / 书内 p.28–p.36；源文本 6,699 字符；下一入口为 §4.6.1 ID 路由。
-- [第4章§4.6.1：ID 路由](knowledge_pcie_chapter_4_section_4_6_1_id_routing.md) — 本轮周期2；BDF 位宽上限、3DW/4DW Header、EP 单次检查与 Switch 每端口两次检查；PDF p.157–p.160 / 书内 p.37–p.40；源文本 3,415 字符；下一入口为 §4.6.2 地址路由。
-- [第4章§4.6.2：地址路由](knowledge_pcie_chapter_4_section_4_6_2_address_routing.md) — 本轮周期3；32/64-bit 地址、BAR 与 Base/Limit 检查、上下行转发及多播；PDF p.161–p.165 / 书内 p.41–p.45；源文本 3,269 字符；下一入口为 §4.6.3 隐式路由。
-- [第4章§4.6.3：隐式路由](knowledge_pcie_chapter_4_section_4_6_3_implicit_routing.md) — 本轮周期4；Message 路由子字段、EP 与 Switch 方向处理及 Malformed TLP 条件；PDF p.166–p.168 / 书内 p.46–p.48；源文本 3,299 字符；下一入口为 §4.7 DLLP 和 Ordered Set。
-- [第4章§4.7：DLLP 和 Ordered Set 不会被路由](knowledge_pcie_chapter_4_section_4_7_dllp_ordered_set_not_routed.md) — 本轮周期5；链路本地路径与 TLP 路由边界；PDF p.168–p.170 / 书内 p.48–p.50；源文本 1,614 字符；第4章完成，下一入口为第5章 TLP Elements。
+- [第3章周期1：BDF、配置空间与访问机制](knowledge_pcie_chapter_3_cycle_1_bdf_config_access.md) — 重学周期1；完整覆盖§3.1–§3.10、B/D/F、配置空间、CF8h/CFCh、ECAM、Type 0/1和访问示例；PDF p.90–p.105；源文本约17,375字符；下一入口为§3.11。
+- [第3章周期2：枚举、热插拔与Arbor](knowledge_pcie_chapter_3_cycle_2_enumeration_arbor.md) — 重学周期2；完整覆盖§3.11–§3.14、Vendor ID/UR/CRS、单/多RC枚举、热插拔和MindShare Arbor；PDF p.106–p.121；源文本约17,908字符；第3章完成，下一入口为第4章。
+- [第4章周期1：地址空间、BAR与Base/Limit](knowledge_pcie_chapter_4_cycle_1_address_spaces_bars_windows.md) — 重学周期1；完整覆盖§4.1–§4.3；PDF p.122–p.146；源文本约18,602字符；下一入口为§4.4。
+- [第4章周期2：地址路由与TLP路由全章收束](knowledge_pcie_chapter_4_cycle_2_routing_all.md) — 重学周期2；完整覆盖§4.4–§4.7；PDF p.147–p.170；源文本约11,440字符，已读完第4章剩余全部内容；下一入口为第5章。
 - [第5章§5.1：包协议基础](knowledge_pcie_chapter_5_section_5_1_packet_protocol.md) — 第1周期；TLP/DLLP/Ordered Set、组帧与CRC/Ack-Nak；PDF p.172–p.173；源文本约2,122字符；下一入口为§5.2.1。
 - [第5章§5.2.1–§5.2.2：TLP组包与结构](knowledge_pcie_chapter_5_section_5_2_1_2_assembly_structure.md) — 第2周期；TLP跨层组包/拆包与Header/Data/Digest结构；PDF p.174–p.177；源文本约4,332字符；下一入口为§5.2.3。
 - [第5章§5.2.3：通用Header](knowledge_pcie_chapter_5_section_5_2_3_generic_header.md) — 第3周期；Fmt/Type、TC、Attr、Length和通用字段；PDF p.178–p.181；源文本约7,073字符；下一入口为§5.2.4.1。
@@ -191,6 +183,17 @@
 - [第5章§5.2.5.1–§5.2.5.2：IO与Memory请求](knowledge_pcie_chapter_5_section_5_2_5_io_memory.md) — 第6周期；IO/Memory请求TLP格式与地址宽度；PDF p.188–p.196；源文本约15,411字符；下一入口为配置与Completion。
 - [第5章§5.2.5.3–§5.2.5.4：配置与Completion](knowledge_pcie_chapter_5_section_5_2_5_config_completion.md) — 第7周期；配置请求、Completion Header、状态与读返回规则；PDF p.197–p.205；源文本约17,817字符；下一入口为Message。
 - [第5章§5.2.5.5：Message请求](knowledge_pcie_chapter_5_section_5_2_5_messages.md) — 第8周期；INTx、电源、错误、锁定、插槽功率和厂商消息；PDF p.206–p.220；源文本约12,116字符，已读完第5章剩余正文；下一入口为第6章。
-- [第6章§6.1–§6.4：流量控制基础与初始化](knowledge_pcie_chapter_6_flow_control_concepts_initialization.md) — 第9周期；Credit、VC Buffer、初始通告和FC_Init流程；PDF p.222–p.237；源文本约15,202字符；下一入口为§6.5。
+- [第6章：流量控制完整重学](knowledge_pcie_chapter_6_flow_control_complete.md) — 完整覆盖§6.1–§6.7.3；Credit、VC Buffer、初始化、运行机制、流控示例、UpdateFC DLLP、更新频率和超时；PDF p.222–p.254；源文本约24,388字符；下一入口为第7章。
 - [第7章§7.1–§7.5：QoS与仲裁](knowledge_pcie_chapter_7_qos_basics_arbitration.md) — 第10周期；TC/VC映射、VC仲裁、端口仲裁和WRR/TBWRR；PDF p.255–p.280；源文本约17,483字符；下一入口为§7.6等时服务。
-- [PCIe Technology 3.0 完整学习知识库](knowledge_pcie_technology.md) — 汇总第1章至第4章§4.7的已完成学习内容，按背景、体系结构、配置、地址空间与事务路由组织；下一入口为第5章 TLP Elements。
+- [第7章周期2：等时服务支持](knowledge_pcie_chapter_7_cycle_2_isochronous_support.md) — 第11周期；TBWRR时间规划、Isochronous Broker、端点/交换机/RC协同、电源与错误预算；PDF p.282–p.294；源文本约11,324字符，已读完第7章；下一入口为第8章。
+- [第8章：事务排序](knowledge_pcie_chapter_8_transaction_ordering.md) — 第12周期；生产者/消费者、简化排序、Relaxed/Weak/IDO和死锁避免；PDF p.296–p.312；源文本约15,280字符；下一入口为第9章。
+- [第9章：DLLP元素](knowledge_pcie_chapter_9_dllp_elements.md) — 第13周期（与第10章前段同批）；DLLP本地性、固定8字节、Ack/Nak、Power、Flow Control和Vendor-Specific；PDF p.314–p.324；下一入口为第10章。
+- [第10章周期1：Ack/Nak元素与发送/接收基础](knowledge_pcie_chapter_10_cycle_1_acknak_elements.md) — 第13周期（跨章续读）；Sequence、LCRC、Replay Buffer、REPLAY_TIMER、NEXT_RCV_SEQ和AckNak_LATENCY_TIMER；PDF p.326–p.337；与第9章合计达到15,000字符；下一入口为§10.3.1.4。
+- [第10章周期2：重放、Nak响应与接收处理](knowledge_pcie_chapter_10_cycle_2_replay_acknak.md) — 第14周期；TLP重放、重复重放、Replay Timer、LCRC/序列号和AckNak延迟；PDF p.338–p.350；源文本约15,938字符；下一入口为§10.4。
+- [第10章周期3：错误、定时器与直通模式](knowledge_pcie_chapter_10_cycle_3_errors_timers_passthrough.md) — 第15周期；错误示例、调度优先级、Gen1/2/3定时器和Switch直通；PDF p.351–p.359；源文本约10,219字符，已读完第10章；下一入口为第11章。
+- [第11章：物理层逻辑（Gen1/Gen2）](knowledge_pcie_chapter_11_physical_layer_logic.md) — 周期1；发送/接收路径、8b/10b、有序集、时钟补偿、去偏移、错误与 ASPM；PDF p.360–394；源文本约31,711字符。
+- [第12章：Gen3 128b/130b](knowledge_pcie_chapter_12_gen3_128b130b.md) — 周期2；块编码、Token、LFSR、接收恢复、loopback；PDF p.396–426；源文本约28,866字符。
+- [第13章：物理层电气规范](knowledge_pcie_chapter_13_electrical_specifications.md) — 周期3；时钟、Tx/Rx、通道、去加重/均衡、眼图、抖动；PDF p.428–480；源文本约39,262字符。
+- [第14章前段：LTSSM 与初始训练](knowledge_pcie_chapter_14_link_training_ltssm_front.md) — 周期4；TS1/TS2、Detect、Polling、Configuration 前段与链路合并；PDF p.482–510；源文本约43,950字符。
+- [第14章后段：Configuration、Recovery 与均衡](knowledge_pcie_chapter_14_link_training_ltssm_back.md) — 周期5；训练示例、L0 改变、Recovery、均衡概览至 §14.8.5；PDF p.511–约540；源文本约35,934字符。
+- [PCIe Technology 3.0 完整学习知识库](knowledge_pcie_technology.md) — 汇总第1章至第10章的已完成学习内容，按背景、体系结构、配置、地址空间、TLP、流控、QoS、排序、DLLP和Ack/Nak组织；下一入口为第11章物理层逻辑（Gen1/Gen2）。

@@ -35,6 +35,15 @@ study plan, or answer a technical question from the established knowledge base.
      read at least 15,000 source characters. Extend across adjacent subsections
      as needed and stop at the nearest reasonable chapter or natural boundary;
      do not stop early merely because one short subsection has ended.
+   - Treat 15,000 characters as a minimum floor, never as the target or an
+     automatic stopping point. While staying below 80,000 characters, continue
+     through the remaining subsections and prefer completing the whole current
+     chapter in the same cycle. If a complete chapter fits comfortably in the
+     remaining budget, do not stop just after crossing 15,000.
+   - Before stopping, estimate whether the rest of the current chapter can fit
+     under the 80,000-character ceiling. If it can, keep reading to the chapter
+     boundary; if it cannot, stop at the last natural subsection boundary that
+     leaves a useful, source-grounded memory and report the next entry point.
    - The 15,000-character minimum is a floor for source text actually read, not
      for the size of the generated memory file. If fewer than 15,000 characters
      remain in the requested scope, read the remainder and report that the

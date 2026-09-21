@@ -26,6 +26,12 @@ whether memory work complies with the local conventions.
    - If fewer than 15,000 source characters remain in the requested scope,
      accept the smaller final cycle only when the learner explicitly reports
      that the scope was exhausted.
+   - Treat 15,000 as a floor, not a stopping target. If the remaining current
+     chapter would fit below the 80,000-character ceiling, flag stopping soon
+     after 15,000 as premature and recommend continuing to the chapter edge.
+   - Check whether the learner made a reasonable attempt to complete the whole
+     current chapter before starting another cycle; prefer fewer, fuller cycles
+     over many minimal cycles.
    - Warn before a batch approaches approximately 80,000 source characters.
 2. Chapter boundaries:
    - Confirm whether the batch stopped at a chapter or natural section edge.
